@@ -7,7 +7,7 @@ public class Movie {
     private int year;
     private String description;
     Director director;
-    List<CastMember> cast;
+    List<Cast> cast;
 
     public String getName() {
         return name;
@@ -25,7 +25,7 @@ public class Movie {
         return director;
     }
 
-    public List<CastMember> getCast() {
+    public List<Cast> getCast() {
         return cast;
     }
 }
