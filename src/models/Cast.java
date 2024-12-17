@@ -11,4 +11,10 @@ public class Cast {
     public String getRole() {
         return role;
     }
+
+    @Override
+    public String toString() {
+        String str = "Actor: %s as %s";
+        return String.format(str, fullName, role);
+    }
 }
