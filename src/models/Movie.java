@@ -9,6 +9,9 @@ public class Movie {
     Director director;
     List<Cast> cast;
 
+    public Movie() {
+    }
+
     public String getName() {
         return name;
     }
@@ -27,5 +30,21 @@ public class Movie {
 
     public List<Cast> getCast() {
         return cast;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Name: ").append(name).append("\n")
+          .append("Year: ").append(year).append("\n")
+          .append("Description: ").append(description).append("\n")
+          .append("Director: ").append(director).append("\n")
+          .append("Cast: \n");
+
+        for (Cast actor : cast) {
+            sb.append("  - ").append(actor).append("\n");
+        }
+
+        return sb.toString();
     }
 }
