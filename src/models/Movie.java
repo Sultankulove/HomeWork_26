@@ -32,6 +32,10 @@ public class Movie {
         return cast;
     }
 
+    public String getDirectorName() {
+        return director != null ? director.getFullName() : "Unknown Director";
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();

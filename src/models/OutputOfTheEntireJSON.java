@@ -1,13 +1,10 @@
 package models;
 
 import utils.FileUtil;
-import utils.ReturnMovieList;
 
 import java.util.List;
 
 public class OutputOfTheEntireJSON {
-
-//    ReturnMovieList returnMovieList = new ReturnMovieList();
 
         List<Movie> movies = FileUtil.readMovieFileToList();
 

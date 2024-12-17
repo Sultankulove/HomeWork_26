@@ -1,7 +1,7 @@
 package models;
 
 public class Cast {
-    String fullName;
+    static String fullName;
     String role;
 
     public String getFullName() {
